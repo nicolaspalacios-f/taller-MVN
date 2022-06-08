@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class App {
 
-    public static void lector_archivos(String metodo ,String folder) throws FileNotFoundException {
+    public static int lector_archivos(String metodo ,String folder) throws FileNotFoundException {
         File carpeta = new File(folder);
         File[] listOfFiles = carpeta.listFiles();
         int contador = 0;
@@ -21,7 +21,7 @@ public class App {
                 contador += contadorLineas(metodo,file);
             }
         }
-    System.out.println(contador);
+    return(contador);
     }
 
     public static int contadorLineas(String metodo, File archivo) throws FileNotFoundException{
