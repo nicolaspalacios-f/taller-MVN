@@ -13,7 +13,7 @@ public class AppTest {
     public void deberiaContarLineasArchivoConPhy() {
         try {
             File file = new File("src\\main\\java\\edu\\escuelaing\\arsw\\ASE\\app\\App.java");
-            Assert.assertEquals(52, App.contadorLineas("phy", file));
+            Assert.assertEquals(66, App.contadorLineas("phy", file));
             System.out.println(App.contadorLineas("phy", file));
         } catch (Exception e) {
             fail();
@@ -24,7 +24,7 @@ public class AppTest {
     public void deberiaContarLineasArchivoConLoc() {
         try {
             File file = new File("src\\main\\java\\edu\\escuelaing\\arsw\\ASE\\app\\App.java");
-            Assert.assertEquals(40, App.contadorLineas("loc", file));
+            Assert.assertEquals(41, App.contadorLineas("loc", file));
             System.out.println(App.contadorLineas("loc", file));
         } catch (Exception e) {
             fail();
@@ -35,7 +35,7 @@ public class AppTest {
     public void deberiaContarLineasArchivoDeFolder() {
         try {
             String file = new String("src\\main\\java\\edu\\escuelaing\\arsw\\ASE\\app");
-            Assert.assertEquals(56, App.lector_archivos("phy", file));
+            Assert.assertEquals(70, App.lector_archivos("phy", file));
             System.out.println(App.lector_archivos("phy", file));
         } catch (Exception e) {
             fail();
